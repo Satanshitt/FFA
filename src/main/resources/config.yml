@@ -1,0 +1,38 @@
+spawn:
+  world: world
+  location:
+    x: 0
+    y: 0
+    z: 0
+    yaw: 0.0
+    pitch: 0.0
+
+Scoreboard:
+  enabled: true
+  title: '  §9FFA BATTLE  '
+  lines:
+    - '&7&m-----------------------'
+    - '&bAsesinatos: &7{KILLS}'
+    - '&bMuertes: &7{DEATHS}'
+    - '&bKillStreak: &7{KILLSTREAK}'
+    - ''
+    - '&9www.nytrux.cf &7| &b@NytruxNt'
+    - '&r&7&m-----------------------'
+
+lang:
+  no-permission: '&cNo tenés permiso para ejecutar este comando.'
+  welcome-message: '&b¡Has entrado a FFA!'
+  spawn-set: '&b¡Has establecido el punto de aparición!'
+  bow-hit-message: '&9%victim%&7 tiene &9%health% &4❤'
+  killer-info-message: '&fHas asesinado a &9%victim%&7. Te dejó a &b%health% &4❤&7 de vida.'
+  unknown-death-message: '&9%victim% &7murió de forma misteriosa...'
+  death-messages:
+    - '&b%player% &7ha sido asesinado por &9%killer%&7.'
+    - '&9%killer% &7no pudo resistirse a matar a &9%player%&7.'
+    - '&b%player% &7se distrajo un momento y &9%killer% &7aprovechó para matarlo.'
+    - '&9%killer% &7desató toda su furia y mató a &b%victim%&7.'
+    - '&9%killer% &7usó una mejor estrategia y logró matar a &b%victim%&7.'
+    - '&7Se le cayó la espada a &b%victim% &7y &9%killer% &7aprovechó para matarlo.'
+    - '&b%victim% &7se cansó de combatir y &9%killer% &7lo venció.'
+    - '&b%victim% &7se olvidó que le quedaba poca vida y murió a manos de &9%killer%&7.'
+    - '&b%victim% &7se distrajo y &9%killer% &7lo asesinó.'

@@ -1,0 +1,16 @@
+name: ${project.artifactId}
+main: cf.nytrux.ffa.FreeForAll
+version: ${project.version}
+depend: [Netherboard]
+description: Simple FreeForAll plugin
+load: POSTWORLD
+authors: [Satanshitt, F3DEX22]
+website: www.nytrux.cf
+commands:
+  ffa:
+    description: Comando principal del plugin. Si se ejecuta sin argumentos mostrará ayuda.
+    aliases: [freeforall, xffa]
+
+  topkills:
+    description: Comando para ver el top de jugadores con más asesinatos.
+    aliases: [top]
