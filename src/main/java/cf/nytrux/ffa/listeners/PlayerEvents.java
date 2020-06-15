@@ -133,7 +133,8 @@ public class PlayerEvents implements Listener, IRequiresPluginInstance {
         final String message = messagesList.get(random.nextInt(messagesList.size()));
 
         event.setDeathMessage(BukkitUtils.translateColor(message.replace("%player%", player.getName())
-                .replace("%killer%", killer.getName())));
+                .replace("%killer%", killer.getName())
+                .replace("%victim%", player.getName())));
 
         killer.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 20 * 5, 1));
         killer.addPotionEffect(new PotionEffect(PotionEffectType.REGENERATION, 20 * 5, 2));
@@ -149,7 +150,7 @@ public class PlayerEvents implements Listener, IRequiresPluginInstance {
         ItemStack apple = new ItemStack(Material.GOLDEN_APPLE, new Random().nextInt(6));
 
         ItemMeta meta = apple.getItemMeta();
-        meta.setDisplayName("&dGapple");
+        meta.setDisplayName(BukkitUtils.translateColor("&dGapple"));
 
         apple.setItemMeta(meta);
 
@@ -158,7 +159,7 @@ public class PlayerEvents implements Listener, IRequiresPluginInstance {
 
         killer.sendMessage(BukkitUtils.translateColor(this.plugin.getMainConfig().getString("lang.killer-info-message")
                 .replace("%victim%", player.getName())
-                .replace("%health%", String.valueOf(killer.getHealth() / 2.0D))));
+                .replace("%health%", String.valueOf((int)(killer.getHealth() / 2.0D)))));
 
         killerUser.updateScoreboard();
         deadUser.updateScoreboard();
