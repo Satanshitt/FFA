@@ -25,6 +25,7 @@ lang:
   spawn-set: '&b¡Has establecido el punto de aparición!'
   bow-hit-message: '&9%victim%&7 tiene &9%health% &4❤'
   killer-info-message: '&fHas asesinado a &9%victim%&7. Te dejó a &b%health% &4❤&7 de vida.'
+  killed-info-message: '&fHas sido asesinado por &9%killer%. Lo has dejado a &b%health% &4❤&7 de vida.'
   unknown-death-message: '&9%victim% &7murió de forma misteriosa...'
   death-messages:
     - '&b%player% &7ha sido asesinado por &9%killer%&7.'

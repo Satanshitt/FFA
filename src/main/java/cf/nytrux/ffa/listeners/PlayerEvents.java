@@ -159,7 +159,11 @@ public class PlayerEvents implements Listener, IRequiresPluginInstance {
 
         killer.sendMessage(BukkitUtils.translateColor(this.plugin.getMainConfig().getString("lang.killer-info-message")
                 .replace("%victim%", player.getName())
-                .replace("%health%", String.valueOf((int)(killer.getHealth() / 2.0D)))));
+                .replace("%health%", BukkitUtils.getFormattedHealth(killer))));
+
+        player.sendMessage(BukkitUtils.translateColor(this.plugin.getMainConfig().getString("lang.killed-info-message")
+                .replace("%killer%", killer.getName())
+                .replace("%health%", BukkitUtils.getFormattedHealth(killer))));
 
         killerUser.updateScoreboard();
         deadUser.updateScoreboard();
